@@ -48,4 +48,5 @@ a {
 * {
     box-sizing: border-box;
     text-transform: capitalize;
+	transition: .5s;
 }

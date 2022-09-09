@@ -4,6 +4,20 @@
     --bg: #010103;
     --border: .1rem solid rgba(255,255,255,.3);
 }
+html {
+    scroll-behavior: smooth;
+}
+.btn {
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: .9rem 3rem;
+    display: inline-block;
+}
+.btn:hover {
+    letter-spacing: 5px;
+}
 header {
     display: flex;
     align-items: center;
@@ -11,9 +25,10 @@ header {
     margin-top: 0.5rem;
     position: fixed;
     left: 0; right: 0;
+    z-index: 1000;
 }
 header .logo img {
-    height: 6rem;
+    height: 4rem;
     margin-left: 3rem;
 }
 
@@ -44,12 +59,13 @@ header nav ul li a {
     margin-right: 1.3rem;
 }
 header .cart-items-container {
-    width: 35rem;
     background: #fff;
     position: absolute;
     top: 100%;
-    right: 10%;
+    right: 0;
     height: calc(100vh - 9.5rem);
+    width: 20rem;
+    padding: 0 1.5rem;
 }
 header .cart-items-container .cart-item {
     position: relative;
@@ -60,4 +76,12 @@ header .cart-items-container .cart-item {
 }
 header .cart-items-container .cart-item img {
     height: 5rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+header .cart-items-container .cart-item .fa-times {
+    cursor: pointer;
+}
+header .cart-items-container .cart-item .fa-times:hover {
+    color: var(--main-color);
 }
