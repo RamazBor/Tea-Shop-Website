@@ -49,4 +49,7 @@ a {
     box-sizing: border-box;
     text-transform: capitalize;
 	transition: .5s;
+	font-family: 'Roboto', sans-serif;
+	border: none;
+	outline: none;
 }
